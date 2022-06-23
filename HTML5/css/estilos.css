@@ -1,0 +1,398 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    font-family: 'Raleway', sans-serif;
+
+}
+
+.contenedor{
+    width: 100%;
+    max-width: 1170px;
+    margin: auto;
+
+}
+
+/* encabezado */
+
+header{
+    width: 100%;
+    height: 200px;
+    background-color: #fcfff5;
+}
+
+.logo{
+    padding: 15px 0;
+    
+}
+
+.logo img{
+    width: 150px;
+    display: block;
+    margin: auto;
+    
+}
+
+.menu{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    max-width: 430px;
+    margin: auto;
+
+}
+.menu a{
+    text-decoration: none;
+    color: #7a7a7a;
+    font-size: 14px;
+    
+
+
+}
+
+.menu a:hover{
+    color: #a4281f;
+    
+}
+
+/* Fin de encabezado */
+
+/* Banner principal */
+
+.banner {
+    width: 100%;
+    height: 500px;
+    background-image: url(../img/Ilustracion-digital.jpg);
+    background-position: center;
+    background-size: cover;
+
+}
+
+.banner > div {
+    width: 100%;
+    height: 100%;
+    background-color: rgba(209, 219, 189, 0.3);
+}
+
+.llamada-accion {
+    text-align: center;
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+
+.llamada-accion p{
+    font-size: 18px;
+    color: white;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+
+}
+
+.llamada-accion h2{
+    font-size: 42px;
+    color: white;
+    text-transform: uppercase;
+    width: 100%;
+    padding: 45px 0;
+    background-color: rgba(255, 255, 255, 0.4);
+    max-width: 470px;
+}
+
+.llamada-accion a {
+    font-size: 18px;
+    text-decoration: none;
+    color: white;
+    padding: 10px 50px;
+    background-color: rgba(0, 0, 0, 0.47);
+    margin-top: 35px;
+    transition: all 0.3s ease-in-out;
+}
+
+.llamada-accion a:hover{
+    background-color:rgba(0, 0, 0, 0.8) ;
+}
+
+/* fin banner principal */
+
+/* banner bienvenida */
+
+.bienvenida{
+    width: 100%;
+    background-color: #bd9d6f;
+    color: white;
+    box-shadow: 3px 5px 5px rgba(0, 0, 0, .4);
+    text-align: center;
+    border-radius: 5px;
+    margin-top: 2px;
+}
+
+.bienvenida h3{
+    font-size: 16px;
+    padding-top: 40px;
+    padding-bottom: 35px;
+    text-transform: uppercase;
+}
+.bienvenida p{
+    font-size: 16px;
+    padding-bottom: 35px;
+    line-height: 1.7em;
+    max-width:370px ;
+    margin: 0 auto;
+}
+
+/* fin banner bienvenida */
+
+/* seccion nosotros */
+
+.nosotros{
+    padding-bottom: 100px;
+       
+}
+
+.nosotros > .contenedor{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.foto-equipo{
+    padding: 15px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    max-width: 430px;
+    margin: auto;
+    
+} 
+
+
+
+.foto-equipo img{
+    
+    width: 100%;
+    border-radius: 10px;
+    background-size: cover;
+    box-shadow: 3px 5px 5px rgba(0, 0, 0, .4);
+    
+}
+
+
+    
+
+
+
+.conocenos {
+    text-align: center;
+    padding: 15px 0;
+    max-width: 570px;
+}
+
+.conocenos p:nth-child(1){
+    font-size: 14px;
+    color: #3c1c22;
+    padding-bottom: 20px;
+    border-bottom: 1px solid black;
+}
+
+.conocenos h3{
+    padding-top: 20px;
+    padding-bottom: 30px;
+    color: #0e96dd;
+    font-size: 18px;
+}
+
+.conocenos p :nth-child(3){
+    font-size: 14px;
+    color: #3c1c22;
+    padding-bottom: 25px;
+}
+
+.conocenos p :nth-child(4){
+    font-size: 14px;
+    color: #646464;
+    padding-bottom: 20px;
+
+}
+
+.conocenos a{
+    font-size: 15px;
+    color: #0e96dd;
+}
+
+@media all and (min-width: 769px){
+
+.nosotros{
+    padding-top: 80px;}
+.foto-equipo{
+    margin-right: 30px;}
+.conocenos{
+    padding-left: 30px;
+    text-align: left;
+}
+}
+
+.form {
+    width: 100%;
+    height: 700px;
+    background-image: url(../img/Ilustracion-digital.jpg);
+    background-position: center;
+    background-size: cover;
+    display: flex;
+}
+
+
+.form-container {
+    background-color: #fff;
+    width: 90%;
+    max-width: 430px;
+    margin: auto;
+    border-radius: 1em;
+    padding: 3.5em 1.5em;
+}
+
+.form-container{
+    background-color: #fff;
+    width: 100%;
+    display: grid;
+    gap: 1em;
+    grid-auto-columns: 100%;
+}
+
+.form-title {
+    text-align: center;
+    font-size: 1.9em;
+    margin-bottom: .4em;
+}
+
+.form-input {
+    background-color: #ffff;
+    font-size: 1rem;
+    padding: .8rem 1em;
+    outline: none;
+    border: none;
+    border: 1px solid #bbb0b0;
+    border-radius: 0.2em;
+}
+
+.form-input-form-imput-message {
+    font-family: inherit;
+    resize: none;
+    padding: 1.8em 1em;
+    margin-bottom: .5em;
+}
+
+.form-cta {
+   font-family: inherit;
+    font-size: 1rem;
+    background-color: #089fe0;
+    color: #fff;
+    border: none;
+    font-weight: 300;
+    padding: .7em 0;
+    border-radius: .2em;
+    cursor: pointer;
+    font-weight: 400;
+}
+
+@media (max-width: 450px){
+    .form{
+        padding: 3.5em 1.5em;
+}
+
+}
+
+
+/* fin de seccion nosotros */
+
+/* seccion footer */
+
+.top-footer {
+    background-color: #193441;
+    height: 25px;
+    
+}
+
+.top-footer p{
+    font-size: 12px;
+    margin: auto;
+    text-align: center;
+    color: rgb(158, 158, 158);
+    padding-top: 3px;
+}
+
+.instagram {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    
+}
+
+.instagram img{
+    width: 55px;
+    
+}
+
+
+.center-footer {
+    background-color: #152d37;
+}
+
+.center-footer .contenedor{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.center-footer .instagram{
+    text-align: center;
+    padding-top: 20px;
+    padding-bottom: 35px;
+    color: #7a7a7a;
+    max-width: 270px;
+    margin:0 auto;
+
+}
+
+.center-footer .e-mail{
+    text-align: center;
+    padding-top: 20px;
+    padding-bottom: 35px;
+    color: #7a7a7a;
+    max-width: 270px;
+    margin:0 auto;
+
+}
+
+.center-footer .widget h4{
+    padding-bottom: 35px;
+    font-size: 18px;
+
+}
+.center-footer p{
+    font-size: 12px;
+    color: #fff;
+    text-align: end;
+}
+
+.bottom-footer {
+    background-color: #193441;
+    height: 25px;
+}
+ 
+.bottom-footer p{
+    font-size: 12px;
+    color: black;
+    text-align: center;
+    margin: auto;
+    padding-top: 2px;
+
+}
